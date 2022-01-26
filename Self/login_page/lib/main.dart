@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
-void main() => runApp(loginPage());
+void main() => runApp(LoginPage());
 
 double screenWidth = 0, screenHeight = 0;
 
-class loginPage extends StatelessWidget {
-  const loginPage({Key? key}) : super(key: key);
-
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -22,6 +21,8 @@ class loginPage extends StatelessWidget {
 }
 
 class Init extends StatelessWidget {
+  const Init({Key? key}) : super(key: key);
+  @override
   Widget build(BuildContext context) {
     screenWidth = MediaQuery.of(context).size.width;
     screenHeight = MediaQuery.of(context).size.height;
@@ -30,6 +31,8 @@ class Init extends StatelessWidget {
 }
 
 class Home extends StatelessWidget {
+  Home({Key? key}) : super(key: key);
+
   Container Pane = Container(
     width: screenWidth * 0.6,
     height: screenHeight * 0.8,
@@ -80,6 +83,9 @@ class Home extends StatelessWidget {
 }
 
 class Shell extends StatelessWidget {
+  const Shell({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.fromLTRB(screenWidth * 0.0014, screenWidth * 0.017,
@@ -103,6 +109,9 @@ class Shell extends StatelessWidget {
 }
 
 class InnerShell extends StatelessWidget {
+  const InnerShell({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.fromLTRB(screenWidth * 0, screenWidth * 0.005,
@@ -130,64 +139,72 @@ class InnerShell extends StatelessWidget {
 }
 
 class LoginWindow extends StatelessWidget {
+  const LoginWindow({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
-    return Container(
+    // return Container(
       // width: screenWidth * 0.275,
       // color: Colors.purple,
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
+    //   child: to see loginWindow dimensions
+
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(bottom: screenHeight * 0.06),
+                child: LoginText(),
+              ),
+            ],
+          ),
+          EmailField(),
+          PasswordField(),
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.01,
+              screenHeight * 0.01,
+              screenWidth * 0.01,
+              0,
+            ),
+            child: Row(
               children: [
-                Padding(
-                  padding: EdgeInsets.only(bottom: screenHeight * 0.06),
-                  child: LoginText(),
-                ),
+                LoginInfo(),
+                ForgotPassword(),
               ],
             ),
-            EmailField(),
-            PasswordField(),
-            Padding(
-              padding: EdgeInsets.fromLTRB(
-                screenWidth * 0.01,
-                screenHeight * 0.01,
-                screenWidth * 0.01,
-                0,
-              ),
-              child: Row(
-                children: [
-                  LoginInfo(),
-                  ForgotPassword(),
-                ],
-              ),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.01,
+              screenHeight * 0.01,
+              screenWidth * 0.01,
+              0,
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(
-                screenWidth * 0.01,
-                screenHeight * 0.01,
-                screenWidth * 0.01,
-                0,
-              ),
-              child: Row(
-                children: [
-                  LoginButton(),
-                  GoogleAuthButton(),
-                ],
-              ),
+            child: Row(
+              children: [
+                LoginButton(),
+                GoogleAuthButton(),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
+    // ); for Container
   }
 }
 
 class LoginText extends StatelessWidget {
+  const LoginText({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -212,6 +229,9 @@ class LoginText extends StatelessWidget {
 }
 
 class EmailField extends StatelessWidget {
+  const EmailField({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: screenWidth * 0.25,
@@ -248,6 +268,9 @@ class EmailField extends StatelessWidget {
 }
 
 class PasswordField extends StatelessWidget {
+  const PasswordField({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: screenWidth * 0.25,
@@ -287,6 +310,9 @@ class PasswordField extends StatelessWidget {
 }
 
 class LoginInfo extends StatelessWidget {
+  const LoginInfo({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
@@ -302,6 +328,9 @@ class LoginInfo extends StatelessWidget {
 }
 
 class ForgotPassword extends StatelessWidget {
+  const ForgotPassword({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
@@ -316,6 +345,9 @@ class ForgotPassword extends StatelessWidget {
 }
 
 class LoginButton extends StatelessWidget {
+  const LoginButton({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return IconButton(
       iconSize: screenWidth * 0.04,
@@ -326,6 +358,9 @@ class LoginButton extends StatelessWidget {
 }
 
 class GoogleAuthButton extends StatelessWidget {
+  const GoogleAuthButton({Key? key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
     return ClipOval(
       child: Material(
