@@ -1,3 +1,5 @@
-# Hello World!!
-
-`Hi there!`
+```
+# Technologies
+* React.js
+* CSS
+```
