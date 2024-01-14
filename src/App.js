@@ -144,7 +144,7 @@ function App() {
         </header>
         <footer className='FOOTER'>
             <p className='CLICKABLE-INFO'>All underlined texts are clickable</p>
-            <p><a href='https://drive.google.com/file/d/1yZYH_xbGzEHmP7mwEmTMIkIwUNHsPCa3/view?usp=sharing'><span className='CLICK-PDF'>Click here</span></a> to get pdf version of my resume.</p>
+            <p><a href='https://drive.google.com/file/d/15l151r37SFJqQohU75SGzFNWZxpzp8nC/view?usp=sharing'><span className='CLICK-PDF'>Click here</span></a> to get pdf version of my resume.</p>
         </footer>
       </div>
     </div>
