@@ -1,9 +1,9 @@
-import './App.css';
+import '../css/App.css';
 import React from 'react';
-import avatar from './images/avatar.jpeg'
+import avatar from '../images/avatar.jpeg'
 import ReactDOM from 'react-dom';
 
-function App() {
+function App2() {
   return (
     <div>
       <div className='SMALLER-SCREEN'>
@@ -153,4 +153,4 @@ function App() {
 
 
 
-export default App;
+export default App2;

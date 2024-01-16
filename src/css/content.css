@@ -1,0 +1,41 @@
+.content{
+    display: flex;
+    height: 72vh;
+    padding: 0;
+    margin: 0;
+}
+
+.left-pane{
+    display: flex;
+    width: 70vw;
+    color:  white;
+    flex-direction: column;
+    background-color: blue;
+}
+
+
+.right-pane{
+    display: flex;
+    width: 30vw;
+    
+    color: white;
+    flex-direction: column;background-color: black;
+}
+
+.right-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .avatar{
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position : absolute;
+        background-color: grey;
+        padding: 3rem;
+        
+    }
+}

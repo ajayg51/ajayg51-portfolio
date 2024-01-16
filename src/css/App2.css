@@ -146,13 +146,13 @@
     padding: 10px;
     font-size: large;
     font-weight: bold;
-    background-image: url("./images/smallScreen.jpg");
+    background-image: url("../images/smallScreen.jpg");
   }
   .late{
     padding: 0;
     margin: 0;
     height: 100%;
-    background-image: url("./images/smallScreen.jpg");
+    background-image: url("../images/smallScreen.jpg");
   }
   .late-hoverMetext{
     display: none;
