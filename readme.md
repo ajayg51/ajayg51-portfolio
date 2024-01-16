@@ -1,5 +1,5 @@
-#  Portfolio
-<!-- <a href="https://ajayg51-portfolio.web.app/"> Click here to view my portfolio</a> -->
+#  Portfolio (Still in dev phase -- initial phase)
+<a href="https://ajayg51-portfolio.web.app/"> Click here to view my portfolio</a>
 
 ## Tech stack
 ```
