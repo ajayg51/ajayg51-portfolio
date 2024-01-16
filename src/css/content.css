@@ -1,15 +1,15 @@
-.content{
+.content {
     display: flex;
     height: 72vh;
     padding: 0;
     margin: 0;
 }
 
-.left-pane{
+.left-pane {
     display: flex;
     width: 70vw;
-    color:  white;
-    
+    color: white;
+
     flex-direction: column;
     background-color: blue;
 }
@@ -17,24 +17,37 @@
 
 .right-pane {
     width: 30vw;
-    color: white;
     background-color: black;
-    
+    color: white;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
+
     align-items: center;
-    
-    .avatar{
-        width:200px;
+    top: 0;
+    bottom: 0;
+
+    .avatar {
+        width: 200px;
         height: 200px;
         border-radius: 50%;
 
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         background-color: grey;
-        padding: 3rem;
-        
+        padding: 1rem;
+        top: 0;
+        bottom: 0;
+
+    }
+
+    .caption {
+        height: 0;
+        font-size: 30px;
+        font-weight: bold;
+        color: yellow;
     }
 }

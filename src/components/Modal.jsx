@@ -8,8 +8,12 @@ export default Modal;
 
 const ModalContent = ()=>{
   return <>
-    <div className="modal">
-      <p className="p-style">Still in dev phase!</p>
+    <div className="modal-container">
+      <div className="modal">
+
+        <p className="p-style">Still in dev phase!</p>
+
+      </div>
     </div>  
   </>
 }

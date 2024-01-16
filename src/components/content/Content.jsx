@@ -6,7 +6,8 @@ const Content = ()=>{
     return <>
     <div className='content'>
         <LeftPane></LeftPane>
-        <RightPane></RightPane>
+        <RightPane figCaption={"Avatar"}></RightPane>
+        
     </div>
     </>
 }
