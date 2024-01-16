@@ -1,0 +1,21 @@
+.modal{
+    width: 30vw;
+    height: 40vh;
+    background-color: grey;
+    border-radius: 12px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color:white; */
+    box-shadow: 10px 10px 5px black;
+    z-index: 2;
+}
+
+.modal{
+    .p-style{
+        font-size: 3rem;
+        font-weight: 800;
+        color:black
+    }
+}

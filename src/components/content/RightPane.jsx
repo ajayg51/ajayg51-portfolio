@@ -6,8 +6,8 @@ const RightPane = ()=>{
     return <>
         <div className='right-pane'>
             <div className='avatar'>
-                <img src="../images/avatar.jpeg" alt='myAvatar' onError={Assets.noImg}></img>
-                {/* <p>Hello</p> */}
+                <img src={Assets.img} alt='myAvatar' ></img>
+                <p>Hello</p>
             </div>
 
 
