@@ -28,26 +28,20 @@
     top: 0;
     bottom: 0;
 
-    .avatar {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-
+    .pic-container {
+        
         display: flex;
         justify-content: center;
         align-items: center;
 
-        background-color: grey;
-        padding: 1rem;
-        top: 0;
-        bottom: 0;
-
+        .pic {
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid red;
+            width: 20rem;
+            height: 20rem;
+        }
     }
 
-    .caption {
-        height: 0;
-        font-size: 30px;
-        font-weight: bold;
-        color: yellow;
-    }
+
 }
