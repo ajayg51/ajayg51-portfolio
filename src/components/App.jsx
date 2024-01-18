@@ -19,7 +19,7 @@ const App = () => {
         <Header onLinkTap={onLinkTap}></Header>
         <Content contentIdx = {contentIdx}></Content>
         <Footer></Footer>
-        {/* <Modal></Modal> */}
+        <Modal></Modal>
       </div>
     </>
   );
