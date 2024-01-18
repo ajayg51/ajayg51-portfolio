@@ -17,7 +17,7 @@ const App = () => {
     <>
       <div>
         <Header onLinkTap={onLinkTap}></Header>
-        <Content headerLinkIndex = {contentIdx}></Content>
+        <Content contentIdx = {contentIdx}></Content>
         <Footer></Footer>
         {/* <Modal></Modal> */}
       </div>

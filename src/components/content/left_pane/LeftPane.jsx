@@ -1,25 +1,41 @@
 import "../../../css/content.css";
-import LeftPaneContent from "../left_pane/left_pane_content"
+import AboutMe from "./AboutMe"
+import WorkExperience from "./WorkExperience"
+import Skills  from "./Skills";
+import { useEffect } from "react";
+import { useState } from "react";
 
-const LeftPane = ({ headerLinkIdx }) => {
-  const paneContent = {
-    0: LeftPaneContent.aboutMe,
-    1: LeftPaneContent.workExperiece,
-    2: LeftPaneContent.skills,
-    3: LeftPaneContent.education,
-    4: LeftPaneContent.projects,
-    5: LeftPaneContent.achievements,
-  };
-//   console.log("content");
-//   console.log(paneContent[headerLinkIdx]);
+const GetContent = (index)=>{
+  switch(index){
+    case 0 : return <AboutMe></AboutMe>;
+    case 1 : return <WorkExperience></WorkExperience>;
+    case 2 : return <Skills></Skills>;
+    default : return <p>Nothing here!</p>;
+  }
+}
+const LeftPane = ({ contentIdx }) => {
 
+  const [idx,setIdx] = useState(0);
+  
+  let content = <p>Nothing here</p>;
+
+  useEffect(()=>{
+    setIdx(contentIdx);
+    
+  },[contentIdx]);
+
+  console.log("idx");
+  console.log(idx);
+  content = GetContent(idx);
+  
   return (
     <>
       <div className="left-pane">
-        
+        {content}
       </div>
     </>
   );
 };
 
 export default LeftPane;
+
