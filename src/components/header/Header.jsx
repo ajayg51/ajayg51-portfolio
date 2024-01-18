@@ -2,7 +2,7 @@ import "../../css/header.css";
 import headerLinks from "../../utils/header_links";
 import { useState } from "react";
 
-const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
+const HeaderLinks = ({ linkClassName, linkUnderlineClassName, onLinkTap }) => {
   const linkTappedIdxMap = {
     0: true,
     1: false,
@@ -11,6 +11,7 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
     4: false,
     5: false,
   };
+
   const [linkIdxTapMap, setLinkIdxTapMap] = useState(linkTappedIdxMap);
   const onTapLink = (index) => {
     // unsetting prev selected
@@ -20,12 +21,18 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
     // setting new state
     setLinkIdxTapMap((prevState) => {
       if (prevState[index]) return prevState;
-      return {
+      const newState = {
         ...prevState,
         [index]: true,
       };
+      
+      onLinkTap(index);
+
+
+      return newState ;
     });
   };
+
   return headerLinks.map((item, index) => (
     <li
       key={index}
@@ -41,7 +48,7 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
   ));
 };
 
-const Header = () => {
+const Header = ({onLinkTap}) => {
   const linkClassName = "link";
   const linkUnderlineClassName = "link-underline";
   return (
@@ -51,6 +58,7 @@ const Header = () => {
           <HeaderLinks
             linkClassName={linkClassName}
             linkUnderlineClassName={linkUnderlineClassName}
+            onLinkTap = {onLinkTap}
           ></HeaderLinks>
         </ul>
       </div>
