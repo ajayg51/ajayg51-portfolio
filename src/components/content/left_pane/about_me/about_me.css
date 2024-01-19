@@ -1,0 +1,38 @@
+.greet {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 0;
+    margin: 1 rem;
+}
+
+.about-me {
+    color: black;
+    text-align: center;
+    margin: 0 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.me-as-well {
+    color : black;
+    text-align: center;
+    margin: 0 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+
+    .coder {
+        color: brown;
+    }
+
+    .developer {
+        color: green;
+    }
+
+    .singer {
+        color: aqua;
+    }
+}

@@ -1,0 +1,20 @@
+.left-pane {
+    width: 100vw;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+.left-pane::after {
+    position: absolute;
+    transform: skew(-25deg);
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 2rem;
+    width: 5px;
+    background: linear-gradient(-45deg, grey 10%, yellow 25%, red 100%);
+
+}

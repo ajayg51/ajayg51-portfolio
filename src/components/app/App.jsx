@@ -1,6 +1,6 @@
-import Header from "./header/Header";
-import Content from "./content/Content";
-import Footer from "./footer/Footer";
+import Header from "../header/Header";
+import Content from "../content/Content";
+import Footer from "../footer/Footer";
 import Modal from "./Modal";
 import { useState } from "react";
 
@@ -19,7 +19,7 @@ const App = () => {
         <Header onLinkTap={onLinkTap}></Header>
         <Content contentIdx = {contentIdx}></Content>
         <Footer></Footer>
-        <Modal></Modal>
+        {/* <Modal></Modal> */}
       </div>
     </>
   );

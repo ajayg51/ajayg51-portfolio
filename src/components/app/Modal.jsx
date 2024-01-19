@@ -1,5 +1,5 @@
 import { createPortal } from "react-dom";
-import "../css/modal.css"
+import "./modal.css"
 
 const Modal = () => {
   return createPortal(<ModalContent/>, document.getElementById("modal"));

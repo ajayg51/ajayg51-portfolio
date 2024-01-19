@@ -1,4 +1,4 @@
-import "../../css/header.css";
+import "./header.css";
 import headerLinks from "../../utils/header_links";
 import { useState } from "react";
 

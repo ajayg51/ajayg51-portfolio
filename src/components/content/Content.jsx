@@ -1,16 +1,13 @@
-import "../../css/content.css";
-import Assets from "../../assets/Assets";
+import "./content.css";
 import LeftPane from "./left_pane/LeftPane";
-import RightPane from "./RightPane";
-
+import RightPane from "./right_pane/RightPane";
 
 const Content = ({ contentIdx }) => {
-    
   return (
     <>
       <div className="content">
         <LeftPane contentIdx={contentIdx}></LeftPane>
-        <RightPane assetImg={Assets.avatar}></RightPane>
+        <RightPane contentIdx={contentIdx}></RightPane>
       </div>
     </>
   );

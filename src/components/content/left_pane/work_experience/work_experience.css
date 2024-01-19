@@ -1,0 +1,18 @@
+.work-experience-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    
+    margin-top: 12px;
+    padding: 0;
+
+    .work-experience-sub-heading {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        
+        margin: 0;
+        padding: 0;
+    }
+
+}

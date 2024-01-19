@@ -1,23 +1,5 @@
-.content {
-    display: flex;
-    height: 72vh;
-    padding: 0;
-    margin: 0;
-}
-
-.left-pane {
-    display: flex;
-    width: 70vw;
-    color: white;
-
-    flex-direction: column;
-    background-color: blue;
-}
-
-
 .right-pane {
     width: 30vw;
-    background-color: black;
     color: white;
 
     display: flex;
@@ -29,15 +11,18 @@
     bottom: 0;
 
     .pic-container {
-        
+
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-right: 10px;
 
         .pic {
-            object-fit: cover;
+
+            object-fit: fill;
             border-radius: 50%;
-            border: 5px solid red;
+            border: 5px solid;
+            border-color: black;
             width: 20rem;
             height: 20rem;
         }

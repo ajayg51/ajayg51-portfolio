@@ -1,33 +1,35 @@
-import "../../../css/content.css";
-import AboutMe from "./AboutMe"
-import WorkExperience from "./WorkExperience"
-import Skills  from "./Skills";
+import "./left_pane.css";
+import AboutMe from "./about_me/AboutMe.jsx";
+import WorkExperience from "./work_experience/WorkExperience.jsx";
+import Skills from "./skills/Skills";
 import { useEffect } from "react";
 import { useState } from "react";
 
-const GetContent = (index)=>{
-  switch(index){
-    case 0 : return <AboutMe></AboutMe>;
-    case 1 : return <WorkExperience></WorkExperience>;
-    case 2 : return <Skills></Skills>;
-    default : return <p>Nothing here!</p>;
+const GetContent = (index) => {
+  switch (index) {
+    case 0:
+      return <AboutMe></AboutMe>;
+    case 1:
+      return <WorkExperience></WorkExperience>;
+    case 2:
+      return <Skills></Skills>;
+    default:
+      return <p>Nothing here!</p>;
   }
-}
+};
 const LeftPane = ({ contentIdx }) => {
+  const [idx, setIdx] = useState(0);
 
-  const [idx,setIdx] = useState(0);
-  
   let content = <p>Nothing here</p>;
 
-  useEffect(()=>{
+  useEffect(() => {
     setIdx(contentIdx);
-    
-  },[contentIdx]);
+  }, [contentIdx]);
 
   console.log("idx");
   console.log(idx);
   content = GetContent(idx);
-  
+
   return (
     <>
       <div className="left-pane">
@@ -38,4 +40,3 @@ const LeftPane = ({ contentIdx }) => {
 };
 
 export default LeftPane;
-

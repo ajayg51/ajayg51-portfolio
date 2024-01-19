@@ -1,8 +1,9 @@
 const AboutMe = {
     greet: "Hello world!",
-    me: `I am Ajay Kumar Gond 2022 B.Tech passout 
-         from NIT Patna with major stream as 
-         Computer Science and Engineering.`,
+    me: {
+        line1: `I am Ajay Kumar Gond`,
+        line2: `Software Development Engineer 1`,
+    },
     meAsWell: {
         coder: "coder",
         developer: "developer",
@@ -12,14 +13,20 @@ const AboutMe = {
 
 const WorkExperiece = {
     ps: {
-        intern: `I have worked as ASE 
-        (Associate Software Engineer - Flutter Developer)
-        at PeopleStrong Technologies Pvt. Ltd. from Jan-2022
-        to Jun-2022`,
-        sde1: `I have worked as SDE 1 
-        (Software Development Engineer 1 - Flutter Developer)
-        at PeopleStrong Technologies Pvt. Ltd. from Jul-2022
-        to Jul-2023`,
+        intern: {
+            role: `ASE 
+            (Associate Software Engineer - Flutter Developer)`,
+            at: `PeopleStrong Technologies Pvt. Ltd. - Gurgaon Haryana`,
+            tenure: `Jan-2022
+            to Jun-2022`
+        },
+        sde1: {
+            role: `SDE 1 
+            (Software Development Engineer 1 - Flutter Developer)`,
+            at: `PeopleStrong Technologies Pvt. Ltd. - Gurgaon Haryana`,
+            tenure: `Jul-2022
+            to Jul-2023`
+        }
     }
 };
 
@@ -100,14 +107,14 @@ const Achievements = {
     theJoyOfComputingUsingPython: {
         name: "The joy of computing using Python",
         percentage: 96,
-        remark : "Topper 1%",
+        remark: "Topper 1%",
         from: "IIT Madras",
         certificateLink: `https://drive.google.com/file/d/1To-rMMGhTI87ekNGzrGNI9ZwMLg6h6Re`,
     },
     ethicalHacking: {
         name: "Ethical Hacking",
         percentage: 88,
-        remark : "Topper 2%",
+        remark: "Topper 2%",
         from: "IIT Kharagpur",
         certificateLink: `https://drive.google.com/file/d/12YuPPbWWaNV_TM5kmfon06ia4WQGLfyP/view`,
     },

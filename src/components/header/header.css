@@ -1,6 +1,6 @@
 .header {
     color: white;
-    background-color: aqua;
+    background : linear-gradient(-15deg, grey 10%, purple 25%, blue 100%);
     display: flex;
     flex-direction: column;
     height: 7rem;
@@ -22,12 +22,12 @@
         }
 
         .link:hover {
-            text-decoration: underline 7px red;
+            text-decoration: underline 7px yellow;
             text-underline-offset: 20%;
         }
 
         .link-underline {
-            text-decoration: underline 7px red;
+            text-decoration: underline 7px paleturquoise;
             text-underline-offset: 20%;
         }
 
