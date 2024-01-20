@@ -1,35 +1,27 @@
 .header {
     color: white;
-    background : linear-gradient(-15deg, grey 10%, purple 25%, blue 100%);
+    background: linear-gradient(-15deg, grey 10%, purple 25%, blue 100%);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 7rem;
     padding: 0;
     margin: 0;
 }
 
-.header {
-    .header-links {
-        list-style: none;
-        display: flex;
-        margin: 1rem;
+.link {
+    margin-right: 3rem;
+    font-size: 2rem;
+    text-underline-offset: 20%;
 
-        .link {
-            padding: 1rem;
-            margin-right: 3rem;
-            font-size: 2rem;
+}
 
-        }
+.link:hover {
+    text-decoration: underline 7px yellow;
 
-        .link:hover {
-            text-decoration: underline 7px yellow;
-            text-underline-offset: 20%;
-        }
+}
 
-        .link-underline {
-            text-decoration: underline 7px paleturquoise;
-            text-underline-offset: 20%;
-        }
+.link-underline {
+    text-decoration: underline 7px paleturquoise;
 
-    }
 }

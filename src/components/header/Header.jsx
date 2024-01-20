@@ -25,16 +25,15 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName, onLinkTap }) => {
         ...prevState,
         [index]: true,
       };
-      
+
       onLinkTap(index);
 
-
-      return newState ;
+      return newState;
     });
   };
 
   return headerLinks.map((item, index) => (
-    <li
+    <span
       key={index}
       className={
         linkIdxTapMap[index]
@@ -44,23 +43,21 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName, onLinkTap }) => {
       onClick={() => onTapLink(index)}
     >
       {item}
-    </li>
+    </span>
   ));
 };
 
-const Header = ({onLinkTap}) => {
+const Header = ({ onLinkTap }) => {
   const linkClassName = "link";
   const linkUnderlineClassName = "link-underline";
   return (
     <>
       <div className="header">
-        <ul className="header-links">
-          <HeaderLinks
-            linkClassName={linkClassName}
-            linkUnderlineClassName={linkUnderlineClassName}
-            onLinkTap = {onLinkTap}
-          ></HeaderLinks>
-        </ul>
+        <HeaderLinks
+          linkClassName={linkClassName}
+          linkUnderlineClassName={linkUnderlineClassName}
+          onLinkTap={onLinkTap}
+        ></HeaderLinks>
       </div>
     </>
   );

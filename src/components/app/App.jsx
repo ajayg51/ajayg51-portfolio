@@ -4,10 +4,9 @@ import Footer from "../footer/Footer";
 import Modal from "./Modal";
 import { useState } from "react";
 
-
 const App = () => {
   const [contentIdx, setContentIdx] = useState(0);
-  
+
   const onLinkTap = (index) => {
     setContentIdx(index);
   };
@@ -15,12 +14,10 @@ const App = () => {
   console.log(contentIdx);
   return (
     <>
-      <div>
-        <Header onLinkTap={onLinkTap}></Header>
-        <Content contentIdx = {contentIdx}></Content>
-        <Footer></Footer>
-        <Modal></Modal>
-      </div>
+      <Header onLinkTap={onLinkTap}></Header>
+      <Content contentIdx={contentIdx}></Content>
+      <Footer></Footer> 
+      {/* <Modal></Modal> */}
     </>
   );
 };

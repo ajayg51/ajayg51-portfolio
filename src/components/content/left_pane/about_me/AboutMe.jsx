@@ -25,7 +25,6 @@ const GetMeAsWellText = (index) => {
 
 const MeAsWell = () => {
   const [index, setIndex] = useState(0);
-
   useEffect(() => {
     let interval = setInterval(() => {
       setIndex((prevIndex) => {
@@ -34,9 +33,10 @@ const MeAsWell = () => {
         }
         return prevIndex + 1;
       });
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [index]);
+
   return <p className="me-as-well">I am a {GetMeAsWellText(index)}</p>;
 };
 

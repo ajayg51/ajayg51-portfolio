@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b37a86ea.css",
-    "main.js": "/static/js/main.d4701b63.js",
+    "main.css": "/static/css/main.28f7a217.css",
+    "main.js": "/static/js/main.8576e4ae.js",
     "static/js/787.88dfdeb5.chunk.js": "/static/js/787.88dfdeb5.chunk.js",
     "static/media/python_logo.png": "/static/media/python_logo.dea924d737bb84eb9ce3.png",
     "static/media/avatar.jpeg": "/static/media/avatar.e382c56f849b560ab87d.jpeg",
@@ -16,12 +16,12 @@
     "static/media/nitp_logo.png": "/static/media/nitp_logo.584cdd7471d8f139e674.png",
     "static/media/cpp_logo.png": "/static/media/cpp_logo.9e95efbc147728a6927b.png",
     "index.html": "/index.html",
-    "main.b37a86ea.css.map": "/static/css/main.b37a86ea.css.map",
-    "main.d4701b63.js.map": "/static/js/main.d4701b63.js.map",
+    "main.28f7a217.css.map": "/static/css/main.28f7a217.css.map",
+    "main.8576e4ae.js.map": "/static/js/main.8576e4ae.js.map",
     "787.88dfdeb5.chunk.js.map": "/static/js/787.88dfdeb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b37a86ea.css",
-    "static/js/main.d4701b63.js"
+    "static/css/main.28f7a217.css",
+    "static/js/main.8576e4ae.js"
   ]
 }
