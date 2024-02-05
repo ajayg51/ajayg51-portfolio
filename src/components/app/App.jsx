@@ -3,21 +3,20 @@ import Content from "../content/Content";
 import Footer from "../footer/Footer";
 import Modal from "./Modal";
 import { useState } from "react";
+import { useContext } from "react";
+import { HeaderLinkContext } from "../../utils/context.jsx";
 
 const App = () => {
-  const [contentIdx, setContentIdx] = useState(0);
+  const [idx,setIdx] = useState(0);
 
-  const onLinkTap = (index) => {
-    setContentIdx(index);
-  };
-  console.log("i : ");
-  console.log(contentIdx);
   return (
     <>
-      <Header onLinkTap={onLinkTap}></Header>
-      <Content contentIdx={contentIdx}></Content>
-      <Footer></Footer> 
-      {/* <Modal></Modal> */}
+      <HeaderLinkContext.Provider value={{idx, setIdx}}>
+        <Header></Header>
+        <Content></Content>
+        <Footer></Footer> 
+        {/* <Modal></Modal> */}
+      </HeaderLinkContext.Provider>
     </>
   );
 };

@@ -1,0 +1,53 @@
+.education-heading{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 700;
+    text-underline-offset: 5px;
+}
+
+.education-unordered-list {
+    list-style: none;
+}
+
+.education-list-content {
+    .institute-name {
+        font-weight: 700;
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    .grade {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .degree-info {
+        margin-left: 5%;
+        .arrow {
+            width: 10px;
+            height: 10px;
+            margin-right: 20px;
+        }
+
+        .degree{
+            font-size: 15px;
+            font-weight: 600;
+            margin-right: 20px;
+        }
+
+        .degree-type{
+            font-size: 15px;
+            font-weight: 600;
+            margin-right: 20px;
+        }
+
+
+        .degree-duration{
+            font-size: 15px;
+            font-weight: 600;
+            margin-right: 20px;
+        }
+    }
+
+}

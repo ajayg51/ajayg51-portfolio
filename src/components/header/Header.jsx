@@ -1,8 +1,12 @@
 import "./header.css";
 import headerLinks from "../../utils/header_links";
 import { useState } from "react";
+import { useContext } from "react";
+import { HeaderLinkContext } from "../../utils/context.jsx";
 
-const HeaderLinks = ({ linkClassName, linkUnderlineClassName, onLinkTap }) => {
+const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
+  const {setIdx} = useContext(HeaderLinkContext);
+
   const linkTappedIdxMap = {
     0: true,
     1: false,
@@ -14,6 +18,8 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName, onLinkTap }) => {
 
   const [linkIdxTapMap, setLinkIdxTapMap] = useState(linkTappedIdxMap);
   const onTapLink = (index) => {
+
+
     // unsetting prev selected
     for (let item in linkIdxTapMap) {
       linkIdxTapMap[item] = false;
@@ -21,13 +27,13 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName, onLinkTap }) => {
     // setting new state
     setLinkIdxTapMap((prevState) => {
       if (prevState[index]) return prevState;
+
       const newState = {
         ...prevState,
         [index]: true,
       };
-
-      onLinkTap(index);
-
+      
+      setIdx(index);
       return newState;
     });
   };
@@ -47,7 +53,7 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName, onLinkTap }) => {
   ));
 };
 
-const Header = ({ onLinkTap }) => {
+const Header = () => {
   const linkClassName = "link";
   const linkUnderlineClassName = "link-underline";
   return (
@@ -56,7 +62,6 @@ const Header = ({ onLinkTap }) => {
         <HeaderLinks
           linkClassName={linkClassName}
           linkUnderlineClassName={linkUnderlineClassName}
-          onLinkTap={onLinkTap}
         ></HeaderLinks>
       </div>
     </>

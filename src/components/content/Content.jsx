@@ -2,12 +2,12 @@ import "./content.css";
 import LeftPane from "./left_pane/LeftPane";
 import RightPane from "./right_pane/RightPane";
 
-const Content = ({ contentIdx }) => {
+const Content = () => {
   return (
     <>
       <div className="content">
-        <LeftPane contentIdx={contentIdx}></LeftPane>
-        <RightPane contentIdx={contentIdx}></RightPane>
+        <LeftPane></LeftPane>
+        <RightPane></RightPane>
       </div>
     </>
   );

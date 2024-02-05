@@ -1,0 +1,45 @@
+.achievements-heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.achievement-name {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ .achievement-details {
+    margin-left: 2rem;
+}
+
+ .remark {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+} 
+
+ .grade {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+} 
+
+.from {
+    margin: 0;
+
+    .college-name {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+ .report-link{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+} 

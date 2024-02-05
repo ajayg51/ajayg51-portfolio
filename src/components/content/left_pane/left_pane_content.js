@@ -59,16 +59,26 @@ const Education = {
             to: 2022,
         },
         degree: "B.Tech",
-        stream: "CSE",
+        stream: "Computer Science and Engineering",
         cgpa: 8.59,
     },
     schooling: {
-        12: {
+        hsc: {
             school: "Rani Laxmi Bai Memorial School - Lucknow",
+            stream: "Physics, Chemistry and Mathematics",
             percentage: 93.2,
+            duration: {
+                from: 2016,
+                to: 2018
+            }
         },
-        10: {
+        ssc: {
             school: "Netajee Defence Academy - Gorakhpur",
+            stream: "Physics, Chemistry and Mathematics",
+            duration: {
+                from: 2014,
+                to: 2016
+            },
             cgpa: 9.4,
         }
     },
@@ -88,10 +98,11 @@ const Projects = {
             hostedLink: `https://flutterapps-22.web.app/`,
             githubLink: `https://github.com/ajayg51/addEmployeeToTeam/tree/main`,
         },
-        expenseTracker: {
-            name: "Expense Tracker",
-            about: `An android/iOS app to manage self expenses and get to know whom to pay and receive from`,
-            githubLink: `https://github.com/ajayg51/expense_tracker/tree/main`,
+        weatherApp: {
+            name: "Weather App",
+            about: `An android/iOS app to get weather details of any place in [India, Nepal, Bhutan, Myanmar and Sri Lanka],
+                    it auto detects location, quits app on error and fetches device location weather info.`,
+            githubLink: `https://github.com/ajayg51/weather_app`,
         },
     }
 
@@ -100,20 +111,20 @@ const Projects = {
 const Achievements = {
     dataAnalyticsWithPython: {
         name: "Data Analytics with Python",
-        percentage: 98,
+        grade: 98,
         from: "IIT Roorkee",
         certificateLink: `https://drive.google.com/file/d/1InONMLB4WsnAE8q-n5xZSLvHDxeuwKVj/view`,
     },
     theJoyOfComputingUsingPython: {
         name: "The joy of computing using Python",
-        percentage: 96,
+        grade: 96,
         remark: "Topper 1%",
         from: "IIT Madras",
         certificateLink: `https://drive.google.com/file/d/1To-rMMGhTI87ekNGzrGNI9ZwMLg6h6Re`,
     },
     ethicalHacking: {
         name: "Ethical Hacking",
-        percentage: 88,
+        grade: 88,
         remark: "Topper 2%",
         from: "IIT Kharagpur",
         certificateLink: `https://drive.google.com/file/d/12YuPPbWWaNV_TM5kmfon06ia4WQGLfyP/view`,

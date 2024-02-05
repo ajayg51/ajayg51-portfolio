@@ -1,6 +1,8 @@
 import "./right_pane.css";
 import Assets from "../../../assets/Assets";
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { HeaderLinkContext } from "../../../utils/context.jsx";
 
 const GetImg = (index) => {
   switch (index) {
@@ -10,16 +12,26 @@ const GetImg = (index) => {
       return <img className="pic" src={Assets.psLogo} alt="pic" />;
     case 2:
       return <img className="pic" src={Assets.coderLogo} alt="pic" />;
+    case 3:
+      return <img className="pic" src={Assets.nitpLogo} alt="pic" />;
+    case 4:
+      return <img className="pic" src={Assets.coderLogo} alt="pic" />;
+    case 5:
+      return <img className="pic" src={Assets.achievementLogo} alt="pic" />;
     default:
       return <img className="pic" src={Assets.noImg} alt="pic" />;
   }
 };
 
-const RightPane = ({ contentIdx }) => {
-  const [index, setIndex] = useState(0);
+const RightPane = () => {
+  const contextIdxObj = useContext(HeaderLinkContext);
+
+  const [index, setIndex] = useState(contextIdxObj.idx);
+
   useEffect(() => {
-    setIndex(contentIdx);
-  }, [contentIdx]);
+    setIndex(contextIdxObj.idx);
+  }, [contextIdxObj.idx]);
+
   return (
     <>
       <div className="right-pane">

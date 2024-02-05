@@ -1,9 +1,9 @@
 .heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1 rem;
     font-weight: 900;
-    margin-top: 1rem;
     padding: 0;
+    margin: 1 rem;
     text-decoration: underline;
     text-underline-offset: 10px;
 }
