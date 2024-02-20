@@ -19,6 +19,7 @@ const WorkExperience = () => {
   const intern = workExperience.intern;
   return (
     <>
+      <p className="common-header">My work experience</p>    
       <WorkExpContent
         role={sde1.role}
         at={sde1.at}

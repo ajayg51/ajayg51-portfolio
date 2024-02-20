@@ -22,7 +22,7 @@ const Skills = () => {
   const tools = LeftPaneContent.skills.tools;
   return (
     <>
-      <p className="heading">Frameworks</p>
+      <p className="common-header">Frameworks</p>
 
       <ul className="skill-unordered-list">
         <ListContent
@@ -35,7 +35,7 @@ const Skills = () => {
         ></ListContent>
       </ul>
 
-      <p className="heading">Languages</p>
+      <p className="common-header">Languages</p>
       <ul className="skill-unordered-list">
         <ListContent
           logo={Assets.dartLogo}
@@ -59,7 +59,7 @@ const Skills = () => {
           content={languages.python}
         ></ListContent>
       </ul>
-      <p className="heading">Tools</p>
+      <p className="common-header">Tools</p>
       <ul className="skill-unordered-list">
         <ListContent logo={Assets.gitLogo} content={tools.git}></ListContent>
       </ul>

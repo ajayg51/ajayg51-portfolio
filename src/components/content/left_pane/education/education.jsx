@@ -41,7 +41,7 @@ const Education = () => {
 
   return (
     <>
-      <p className="education-heading">Education</p>
+      <p className="common-header">Education</p>
       <ul className="education-unordered-list">
         <ListContent
           institute={nitp.college}

@@ -43,7 +43,7 @@ const MeAsWell = () => {
 const AboutMe = () => {
   return (
     <>
-      <p className="greet">{LeftPaneContent.aboutMe.greet}</p>
+      <p className="common-header">{LeftPaneContent.aboutMe.greet}</p>
       <div>
         <p className="about-me">{LeftPaneContent.aboutMe.me.line1}</p>
       </div>

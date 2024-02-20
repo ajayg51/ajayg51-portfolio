@@ -26,7 +26,7 @@ const Achievements = () => {
 
   return (
     <>
-      <p className="achievements-heading">Achievements</p>
+      <p className="common-header">Achievements</p>
       <div className="achievements-div">
         <ul>
           <ListContent

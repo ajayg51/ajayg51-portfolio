@@ -1,11 +1,14 @@
 import "./header.css";
+
+import ProfileLinks from "./profile_links.js";
+import Assets from "../../assets/Assets.js";
 import headerLinks from "../../utils/header_links";
 import { useState } from "react";
 import { useContext } from "react";
 import { HeaderLinkContext } from "../../utils/context.jsx";
 
 const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
-  const {setIdx} = useContext(HeaderLinkContext);
+  const { setIdx } = useContext(HeaderLinkContext);
 
   const linkTappedIdxMap = {
     0: true,
@@ -18,8 +21,6 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
 
   const [linkIdxTapMap, setLinkIdxTapMap] = useState(linkTappedIdxMap);
   const onTapLink = (index) => {
-
-
     // unsetting prev selected
     for (let item in linkIdxTapMap) {
       linkIdxTapMap[item] = false;
@@ -32,13 +33,13 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
         ...prevState,
         [index]: true,
       };
-      
+
       setIdx(index);
       return newState;
     });
   };
 
-  return headerLinks.map((item, index) => (
+  let headerLinkList = headerLinks.map((item, index) => (
     <span
       key={index}
       className={
@@ -51,6 +52,28 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
       {item}
     </span>
   ));
+
+  headerLinkList.push(
+    <ul className="profile-links">
+      <li>
+        <a  href={ProfileLinks.leetcode} target="leetcode">
+          <img className="links" src={Assets.leetcodeLogo} alt="leetcodeLogo" />
+        </a>
+      </li>
+      <li>
+        <a  href={ProfileLinks.linkedin} target="linkedin">
+          <img className="links" src={Assets.linkedinLogo} alt="linkedinLogo" />
+        </a>
+      </li>
+      <li>
+        <a  href={ProfileLinks.github} target="github">
+          <img className="links" src={Assets.githubLogo} alt="githubLogo" />
+        </a>
+      </li>
+    </ul>
+  );
+
+  return headerLinkList;
 };
 
 const Header = () => {

@@ -1,10 +1,27 @@
-
-.footer{
-    color: orange;
+.footer {
     background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     height: 10vh;
     padding: 0;
     margin: 0;
+}
+
+.footer-list-container {
+    list-style: none;
+}
+
+
+
+.footer-text {
+    margin: 30px;
+    text-decoration: none;
+}
+
+.footer-links {
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 10px;
 }

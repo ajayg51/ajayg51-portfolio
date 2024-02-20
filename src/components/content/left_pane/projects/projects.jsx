@@ -30,7 +30,7 @@ const Projects = () => {
 
   return (
     <>
-      <p className="projects-heading">Projects</p>
+      <p className="common-header">Projects</p>
       <div className="projects-div">
         <ul>
           <ListContent
