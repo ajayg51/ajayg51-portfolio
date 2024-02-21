@@ -6,19 +6,23 @@ const ListContent = ({ name, hostedLink, githubLink, about }) => {
     <>
       <p className="project-name">{name}</p>
       <div className="project-details">
+        <p className="project-desc">{about}</p>
         {hostedLink && (
           <p>
-            <a href={hostedLink} className="project-hosted-link">
+            <a
+              href={hostedLink}
+              target="hosted-web-app"
+              className="project-link"
+            >
               Click here to view hosted web-app
             </a>
           </p>
         )}
         <p>
-          <a href={githubLink} className="project-github-link">
+          <a href={githubLink} target={githubLink} className="project-link">
             Click here to view github repo
           </a>
         </p>
-        <p className="project-desc">{about}</p>
       </div>
     </>
   );

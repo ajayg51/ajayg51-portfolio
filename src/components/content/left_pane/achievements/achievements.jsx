@@ -12,7 +12,8 @@ const ListContent = ({ name, grade, remark, from, link }) => {
         <p className="from">
           NPTEL course offered by <span className="college-name">{from}</span>{" "}
         </p>
-        <a className="report-link" href={link}>Click here to view report card</a>
+        <p></p>
+        <a  href={link} target={link} className="report-link">Click here to view report card</a>
       </div>
     </>
   );

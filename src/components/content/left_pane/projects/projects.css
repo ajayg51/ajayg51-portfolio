@@ -12,3 +12,11 @@
     font-size: 20px;
     font-weight: 700;
 }
+
+.project-link{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 5px;
+}
