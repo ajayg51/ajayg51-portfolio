@@ -1,5 +1,5 @@
 import "./left_pane.css";
-import AboutMe from "./about_me/AboutMe.jsx";
+import AboutMe from "./about_me/about_me.jsx";
 import WorkExperience from "./work_experience/work_experience.jsx";
 import Skills from "./skills/skills.jsx";
 import Education from "./education/education.jsx";
