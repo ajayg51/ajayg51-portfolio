@@ -1,5 +1,12 @@
 #  Portfolio - mobile version to be built (only bigger screen renderable).
 
+# TODO
+```
+
+   * change grade in achievement section to other info coz it's percentage
+
+```
+
 # View portfolio
 <a href="https://ajayg51-portfolio.web.app/" target="portfolio" > Click here to view my portfolio</a>
 
