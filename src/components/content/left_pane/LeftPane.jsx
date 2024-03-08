@@ -14,15 +14,16 @@ const GetContent = (index) => {
     case 0:
       return <AboutMe></AboutMe>;
     case 1:
-      return <WorkExperience></WorkExperience>;
-    case 2:
       return <Skills></Skills>;
-    case 3:
+    case 2:
       return <Education></Education>;
-    case 4:
-      return <Projects></Projects>;
-    case 5:
+
+    case 3:
       return <Achievements></Achievements>;
+    case 4:
+      return <WorkExperience></WorkExperience>;
+    case 5:
+      return <Projects></Projects>;
     default:
       return <p>Nothing here!</p>;
   }

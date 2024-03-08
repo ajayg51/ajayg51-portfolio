@@ -9,15 +9,16 @@ const GetImg = (index) => {
     case 0:
       return <img className="pic" src={Assets.avatar} alt="pic" />;
     case 1:
-      return <img className="pic" src={Assets.psLogo} alt="pic" />;
+      return <img className="pic" src={Assets.coderLogo} alt="pic" />;
     case 2:
-      return <img className="pic" src={Assets.coderLogo} alt="pic" />;
-    case 3:
+
       return <img className="pic" src={Assets.nitpLogo} alt="pic" />;
-    case 4:
-      return <img className="pic" src={Assets.coderLogo} alt="pic" />;
-    case 5:
+    case 3:
       return <img className="pic" src={Assets.achievementLogo} alt="pic" />;
+    case 4:
+      return <img className="pic" src={Assets.psLogo} alt="pic" />;
+    case 5:
+      return <img className="pic" src={Assets.coderLogo} alt="pic" />;
     default:
       return <img className="pic" src={Assets.noImg} alt="pic" />;
   }

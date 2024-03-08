@@ -8,6 +8,9 @@ import { useContext } from "react";
 import { HeaderLinkContext } from "../../utils/context.jsx";
 
 const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
+  
+  // do use useReducer here
+  
   const { setIdx } = useContext(HeaderLinkContext);
 
   const linkTappedIdxMap = {

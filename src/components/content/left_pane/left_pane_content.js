@@ -88,23 +88,62 @@ const Education = {
 
 const Projects = {
     flutter: {
-        teamManagement: {
-            name: "Team Management",
-            about: `A web-app to assist in inclusion of a 
-            domain-specific employee to team and view the same,
-            it remembers which of the employee were included
-            across app launches restricts inclusion of same 
-            domain-employee.`,
-            hostedLink: `https://flutterapps-22.web.app/`,
-            githubLink: `https://github.com/ajayg51/addEmployeeToTeam/tree/main`,
-        },
         weatherApp: {
             name: "Weather App",
-            about: `An android/iOS app to get weather details of any place in [India, Nepal, Bhutan, Myanmar and Sri Lanka],
-                    it auto detects location, quits app on error and fetches device location weather info.`,
-            githubLink: `https://github.com/ajayg51/weather_app`,
+            githubLink: `https://github.com/ajayg51/assignment0`,
+            techStack: "Dart and Flutter",
+            about: `An android/iOS app to get weather details of any place in [India, Nepal, Bhutan, Myanmar and Sri Lanka]`,
+            featureList: [
+                "google authentication",
+                "auto detects location",
+                "quits app on error",
+                "fetches device location as well as searched location weather info",
+                "saves data locally",
+            ],
+            libraries: {
+                l0: {
+                    title: "flutter_bloc",
+                    desc: "state management using BLoC pattern",
+                },
+                l1: {
+                    title: "get_it",
+                    desc: "dependency injection",
+                },
+                l2: {
+                    title: "auto_route",
+                    desc: "navigation",
+                },
+                l3: {
+                    title: "hive",
+                    desc: "local storage",
+                },
+
+            }
+
+        }
+    },
+    java: {
+        juanaTravelAgency: {
+            name: "Juana Travel Agency",
+            githubLink: "https://github.com/ajayg51/nymble_assignment/tree/main",
+            techStack: "Java, Maven and JUnit",
+            about: "A Java based executable program to help users plan their vacation",
+            featureList: [
+                "handles functionalities like subscription of a user for an activity",
+                "puts constraints on user subscription through agency passenger capacity, activity capacity",
+            ],
+            libraries: {
+                l0: {
+                    title: "Maven",
+                    desc: "used as a build tool for Java projects",
+                },
+                l1: {
+                    title: "JUnit",
+                    desc: "used as a unit testing framework to test the expected and actual behaviour of methods of each class of the program",
+                },
+            },
         },
-    }
+    },
 
 }
 
