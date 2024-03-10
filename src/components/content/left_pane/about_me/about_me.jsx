@@ -3,38 +3,82 @@ import LeftPaneContent from "../left_pane_content";
 import "./about_me.css";
 
 const GetMeAsWellText = (index) => {
+  let text;
+
   switch (index) {
     case 0:
-      return (
-        <span className="coder">{LeftPaneContent.aboutMe.meAsWell.coder}</span>
-      );
+      text = LeftPaneContent.aboutMe.meAsWell.coder;
+      break;
+
     case 1:
-      return (
-        <span className="developer">
-          {LeftPaneContent.aboutMe.meAsWell.developer}
-        </span>
-      );
+      text = LeftPaneContent.aboutMe.meAsWell.developer;
+      break;
+
     case 2:
-      return (
-        <span className="singer">
-          {LeftPaneContent.aboutMe.meAsWell.singer}
-        </span>
-      );
+      text = LeftPaneContent.aboutMe.meAsWell.singer;
+      break;
   }
+
+  const [textIdx, setTextIdx] = useState(0);
+  const [outText, setOutText] = useState("");
+
+
+  useEffect(() => {
+    let interval = setInterval(
+
+      () => {
+        setOutText(
+          (prevText) => {
+            const prevTextLen = prevText.length;
+            
+            console.log(prevText+" : "+text +" : "+text[prevTextLen]);
+            
+            if (prevTextLen > text.length-1) {
+              console.log(text + " " + text.length);
+              return "";
+            }
+
+            return prevText += text[prevTextLen];
+          }
+        );
+      }, 100);
+
+    return () => clearInterval(interval);
+
+  }, [outText]);
+
+  // console.log(outText);
+
+  return <span className="coder">{outText}</span>;
+  // (<>
+
+  //   <span className="developer">
+
+  //   </span>
+  //   <span className="singer">
+
+  //   </span>
+  // </>);
 };
 
 const MeAsWell = () => {
   const [index, setIndex] = useState(0);
+
   useEffect(() => {
-    let interval = setInterval(() => {
-      setIndex((prevIndex) => {
-        if (prevIndex == 2) {
-          return 0;
-        }
-        return prevIndex + 1;
-      });
-    }, 3000);
+    let interval = setInterval(
+
+      () => {
+        setIndex((prevIndex) => {
+          if (prevIndex == 2) {
+            return 0;
+          }
+          return prevIndex + 1;
+        });
+
+      }, 3000);
+
     return () => clearInterval(interval);
+
   }, [index]);
 
   return <p className="me-as-well">I am a {GetMeAsWellText(index)}</p>;
