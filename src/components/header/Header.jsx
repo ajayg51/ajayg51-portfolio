@@ -8,9 +8,9 @@ import { useContext } from "react";
 import { HeaderLinkContext } from "../../utils/context.jsx";
 
 const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
-  
+
   // do use useReducer here
-  
+
   const { setIdx } = useContext(HeaderLinkContext);
 
   const linkTappedIdxMap = {
@@ -42,6 +42,8 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
     });
   };
 
+  const headerLinkListLen = headerLinks.length;
+
   let headerLinkList = headerLinks.map((item, index) => (
     <span
       key={index}
@@ -58,18 +60,18 @@ const HeaderLinks = ({ linkClassName, linkUnderlineClassName }) => {
 
   headerLinkList.push(
     <ul className="profile-links">
-      <li>
-        <a  href={ProfileLinks.leetcode} target="leetcode">
+      <li key={headerLinkList}>
+        <a href={ProfileLinks.leetcode} target="leetcode">
           <img className="links" src={Assets.leetcodeLogo} alt="leetcodeLogo" />
         </a>
       </li>
-      <li>
-        <a  href={ProfileLinks.linkedin} target="linkedin">
+      <li key={headerLinkList + 1}>
+        <a href={ProfileLinks.linkedin} target="linkedin">
           <img className="links" src={Assets.linkedinLogo} alt="linkedinLogo" />
         </a>
       </li>
-      <li>
-        <a  href={ProfileLinks.github} target="github">
+      <li key={headerLinkList + 2}>
+        <a href={ProfileLinks.github} target="github">
           <img className="links" src={Assets.githubLogo} alt="githubLogo" />
         </a>
       </li>

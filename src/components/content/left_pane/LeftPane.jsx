@@ -37,8 +37,8 @@ const LeftPane = () => {
     setIdx(idx);
   }, [idx]);
 
-  console.log("idx");
-  console.log(idx);
+  console.log("header-link-idx : "+idx);
+  
 
   content = GetContent(idx);
 

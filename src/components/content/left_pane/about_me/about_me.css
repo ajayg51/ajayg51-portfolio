@@ -23,16 +23,8 @@
     margin: 0 2rem;
     font-size: 2rem;
     font-weight: 900;
+}
 
-    .coder {
-        color: brown;
-    }
-
-    .developer {
-        color: green;
-    }
-
-    .singer {
-        color: aqua;
-    }
+.me-span-text{
+    margin: 10px;
 }

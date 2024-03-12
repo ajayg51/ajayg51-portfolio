@@ -2,86 +2,130 @@ import { useEffect, useState } from "react";
 import LeftPaneContent from "../left_pane_content";
 import "./about_me.css";
 
-const GetMeAsWellText = (index) => {
-  let text;
-
+const getText = index => {
   switch (index) {
     case 0:
-      text = LeftPaneContent.aboutMe.meAsWell.coder;
-      break;
+      return LeftPaneContent.aboutMe.meAsWell.coder;
+
 
     case 1:
-      text = LeftPaneContent.aboutMe.meAsWell.developer;
-      break;
+      return LeftPaneContent.aboutMe.meAsWell.developer;
+
 
     case 2:
-      text = LeftPaneContent.aboutMe.meAsWell.singer;
-      break;
-  }
+      return LeftPaneContent.aboutMe.meAsWell.singer;
 
-  const [textIdx, setTextIdx] = useState(0);
+  }
+}
+
+const getTextColor = index => {
+  switch (index) {
+    case 0:
+      return "purple";
+
+
+    case 1:
+      return "green";
+
+
+    case 2:
+      return "lime";
+
+  }
+}
+
+
+const MeAsWell = () => {
+
+  const [text, setText] = useState("");
+  const [textColor, setTextColor] = useState("black");
   const [outText, setOutText] = useState("");
+
+  const [textIdx, setTextIdx] = useState(-1);
 
 
   useEffect(() => {
+
     let interval = setInterval(
 
       () => {
         setOutText(
           (prevText) => {
-            const prevTextLen = prevText.length;
-            
-            console.log(prevText+" : "+text +" : "+text[prevTextLen]);
-            
-            if (prevTextLen > text.length-1) {
-              console.log(text + " " + text.length);
-              return "";
+            let prevTextLen = 0, textLen = 0;
+
+            if (prevText !== undefined) {
+
+              prevTextLen = prevText.length;
             }
 
-            return prevText += text[prevTextLen];
+            if (text != undefined) {
+              textLen = text.length;
+            }
+
+            if (textIdx === -1) {
+
+              setText(() => {
+
+                prevText = getText(textIdx);
+                return prevText;
+
+              });
+
+              setTextColor(() => {
+
+                return getTextColor(textIdx);
+
+              });
+
+              setTextIdx(prevIdx => {
+                prevIdx++;
+                return prevIdx % 3;
+              });
+
+            } else if (prevTextLen > textLen - 1) {
+
+
+              setText(() => {
+                return getText(textIdx);
+              });
+
+              setTextColor(() => {
+                return getTextColor(textIdx);
+              });
+
+              setTextIdx(prevIdx => {
+                prevIdx++;
+                return prevIdx % 3;
+              });
+
+              return "";
+
+            }
+
+            if (text[prevTextLen] !== undefined) {
+              return prevText += text[prevTextLen];
+            }
+            return prevText;
+
           }
         );
-      }, 100);
+      }, 180);
 
     return () => clearInterval(interval);
 
   }, [outText]);
 
-  // console.log(outText);
 
-  return <span className="coder">{outText}</span>;
-  // (<>
+  return <p className="me-as-well">I am a
+    <span className="me-span-text" style={{ color: textColor }}>
+      {outText}
+    </span>
+    <span>
+      &#x1F60D;
+    </span>
+  </p>;
 
-  //   <span className="developer">
 
-  //   </span>
-  //   <span className="singer">
-
-  //   </span>
-  // </>);
-};
-
-const MeAsWell = () => {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    let interval = setInterval(
-
-      () => {
-        setIndex((prevIndex) => {
-          if (prevIndex == 2) {
-            return 0;
-          }
-          return prevIndex + 1;
-        });
-
-      }, 3000);
-
-    return () => clearInterval(interval);
-
-  }, [index]);
-
-  return <p className="me-as-well">I am a {GetMeAsWellText(index)}</p>;
 };
 
 const AboutMe = () => {
