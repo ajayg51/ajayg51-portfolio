@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ffd8f402.css",
-    "main.js": "/static/js/main.4d4467fb.js",
+    "main.js": "/static/js/main.e0c9d043.js",
     "static/js/787.88dfdeb5.chunk.js": "/static/js/787.88dfdeb5.chunk.js",
     "static/media/python_logo.png": "/static/media/python_logo.dea924d737bb84eb9ce3.png",
     "static/media/avatar.jpeg": "/static/media/avatar.e382c56f849b560ab87d.jpeg",
@@ -23,11 +23,11 @@
     "static/media/down_arrow.svg": "/static/media/down_arrow.7be49996f39bd45cb0ecc3c24da95774.svg",
     "index.html": "/index.html",
     "main.ffd8f402.css.map": "/static/css/main.ffd8f402.css.map",
-    "main.4d4467fb.js.map": "/static/js/main.4d4467fb.js.map",
+    "main.e0c9d043.js.map": "/static/js/main.e0c9d043.js.map",
     "787.88dfdeb5.chunk.js.map": "/static/js/787.88dfdeb5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffd8f402.css",
-    "static/js/main.4d4467fb.js"
+    "static/js/main.e0c9d043.js"
   ]
 }
