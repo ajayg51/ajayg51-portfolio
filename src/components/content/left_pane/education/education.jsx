@@ -17,7 +17,6 @@ const ListContent = ({
         <span className="institute-name">{institute}</span>
         <span className="grade">
           {gradeType == "CGPA" ? gradeType : null} {grade}
-          {gradeType == "%" ? gradeType : null}
         </span>
       </p>
       <p className="degree-info">
@@ -53,7 +52,6 @@ const Education = () => {
         />
         <ListContent
           institute={hsc.school}
-          gradeType={"%"}
           grade={hsc.percentage}
           degree={hsc.stream}
           duration={hsc.duration}

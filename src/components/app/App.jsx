@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { HeaderLinkContext } from "../../utils/context.jsx";
 
 const App = () => {
-  const [idx,setIdx] = useState(4);
+  const [idx,setIdx] = useState(0);
 
   return (
     <>

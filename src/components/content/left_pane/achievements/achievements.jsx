@@ -7,8 +7,8 @@ const ListContent = ({ name, grade, remark, from, link }) => {
     <>
       <p className="achievement-name">{name}</p>
       <div className="achievement-details">
-        {remark && <p className="remark">{remark}</p>}
-        <p className="grade">Grade : {grade}%</p>
+        {remark && <p className="remark">Remark : {remark}</p>}
+        <p className="grade">Percentage : {grade}%</p>
         <p className="from">
           NPTEL course offered by <span className="college-name">{from}</span>{" "}
         </p>

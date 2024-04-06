@@ -11,6 +11,7 @@
 
 .about-me {
     color: black;
+    font-family:cursive;
     text-align: center;
     margin: 0 2rem;
     font-size: 2rem;
@@ -27,4 +28,5 @@
 
 .me-span-text{
     margin: 10px;
+    font-family:cursive;
 }

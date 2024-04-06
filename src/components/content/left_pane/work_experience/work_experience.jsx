@@ -1,7 +1,8 @@
 import LeftPaneContent from "../left_pane_content";
+import Assets from "../../../../assets/Assets.js";
 import "./work_experience.css";
 
-const WorkExpContent = ({ role, at, tenure }) => {
+const WorkExpContent = ({ at, position, role, tenure }) => {
   const isBackendBlockExists = role && role.backend;
   const isFlutterBlockExists = role && role.frontend && role.frontend.flutter;
   const isReactJSBlockExists = role && role.frontend && role.frontend.reactJS;
@@ -23,16 +24,27 @@ const WorkExpContent = ({ role, at, tenure }) => {
 
   return (
     <div className="work-experience-heading">
-      <p className="company-name">{at}</p>
+      <p className="company-name">{at}
+        <span className="position">
+          {position}
+        </span>
+
+      </p>
       <p className="tenure">{tenure}</p>
       <p className="work-experience-description">
         <div className="backend-div">
           <p className="role-heading">{backendHeading}</p>
           <p></p>
-          <ul>
+          <ul className="work-experience-list-style">
+
+
             {
               backendTask0 &&
-              <li className="role-tasks">{backendTask0}</li>
+              <li className="role-tasks">
+                {backendTask0}
+              </li>
+
+
             }
             {
               backendTask1 &&
@@ -48,31 +60,31 @@ const WorkExpContent = ({ role, at, tenure }) => {
             <div className="flutter">
               <p className="role-heading">{flutterHeading}</p>
               <p></p>
-              
-                <ul className="">
 
-                  {
-                    flutterTask0 &&
-                    <li className="role-tasks">
-                      {flutterTask0}
-                    </li>
-                  }
+              <ul className="work-experience-list-style">
 
-                  {
-                    flutterTask1 &&
-                    <li className="role-tasks">
-                      {flutterTask1}
-                    </li>
-                  }
+                {
+                  flutterTask0 &&
+                  <li className="role-tasks">
+                    {flutterTask0}
+                  </li>
+                }
 
-                  {
-                    flutterTask2 &&
-                    <li className="role-tasks">
-                      {flutterTask2}
-                    </li>
-                  }
-                </ul>
-              
+                {
+                  flutterTask1 &&
+                  <li className="role-tasks">
+                    {flutterTask1}
+                  </li>
+                }
+
+                {
+                  flutterTask2 &&
+                  <li className="role-tasks">
+                    {flutterTask2}
+                  </li>
+                }
+              </ul>
+
             </div>
           }
 
@@ -81,28 +93,28 @@ const WorkExpContent = ({ role, at, tenure }) => {
             <div className="reactJS">
               <p className="role-heading">{reactJSHeading}</p>
               <p></p>
-              
-                <ul className="">
-                  {
-                    reactJSTask0 &&
-                    <li className="role-tasks">
-                      {reactJSTask0}
-                    </li>
-                  }
-                  {
-                    reactJSTask1 &&
-                    <li className="role-tasks">
-                      {reactJSTask1}
-                    </li>
-                  }
-                  {
-                    reactJSTask2 &&
-                    <li className="role-tasks">
-                      {reactJSTask2}
-                    </li>
-                  }
-                </ul>
-              
+
+              <ul className="work-experience-list-style">
+                {
+                  reactJSTask0 &&
+                  <li className="role-tasks">
+                    {reactJSTask0}
+                  </li>
+                }
+                {
+                  reactJSTask1 &&
+                  <li className="role-tasks">
+                    {reactJSTask1}
+                  </li>
+                }
+                {
+                  reactJSTask2 &&
+                  <li className="role-tasks">
+                    {reactJSTask2}
+                  </li>
+                }
+              </ul>
+
             </div>
           }
 
@@ -125,11 +137,13 @@ const WorkExperience = () => {
         <div className="work-experience-child-div">
           <WorkExpContent
             at={sde1.at}
+            position={sde1.position}
             role={sde1.role}
             tenure={sde1.tenure}
           ></WorkExpContent>
           <WorkExpContent
             at={intern.at}
+            position={intern.position}
             role={intern.role}
             tenure={intern.tenure}
           ></WorkExpContent>

@@ -18,11 +18,11 @@
     padding-bottom: 15px;
 }
 
-.backend-div{
+.backend-div {
     padding-left: 1rem;
 }
 
-.frontend-div{
+.frontend-div {
     padding-left: 1rem;
 }
 
@@ -37,6 +37,12 @@
         margin: 0;
         font-size: 32px;
         font-weight: 700;
+    }
+    .position{
+        font-family:cursive;
+        
+        font-size: 30px;
+        font-weight: 900;
     }
 
     .tenure {
@@ -54,10 +60,16 @@
         font-size: 18px;
         font-weight: 700;
     }
+
     .role-tasks {
         margin: 0;
         margin-left: 1rem;
         margin-bottom: 10px;
         font-size: 16px;
     }
+    
+    .work-experience-list-style{
+        list-style: circle;
+    }
+
 }

@@ -14,7 +14,8 @@ const AboutMe = {
 const WorkExperiece = {
     ps: {
         sde1: {
-            at: `PeopleStrong Technologies Pvt. Ltd. | SDE 1 (FULL-TIME)`,
+            at: `PeopleStrong Technologies Pvt. Ltd. | `,
+            position:`SDE 1 (FULL-TIME)`,
             tenure: `1.1 Year (July-2022 to July-2023) - Gurgaon Haryana `,
             role: {
                 backend: {
@@ -49,15 +50,16 @@ const WorkExperiece = {
             },
         },
         intern: {
-            at: `PeopleStrong Technologies Pvt. Ltd. | INTERNSHIP`,
+            at: `PeopleStrong Technologies Pvt. Ltd. | `,
+            position:`INTERNSHIP`,
             tenure: `6 months (January-2022 to June-2022) - Gurgaon Haryana `,
             role: {
                 frontend: {
                     flutter: {
                         heading: `Frontend | Tech Stack : Dart, Flutter`,
                         task0: `Built an MVP(Minimum Viable Product) of existing web-app`,
-                        task1: `Developed a feature to showcase attendance punch in timestamp,worked
-                        on change theme, log out and change password features`,
+                        task1: `Developed a feature to showcase attendance punch in timestamp, 
+                        worked on change theme, log out and change password features`,
                         task2: `Used regex to check password strength`,
                     },
 
@@ -100,13 +102,13 @@ const Education = {
         },
         degree: "B.Tech",
         stream: "Computer Science and Engineering",
-        cgpa: 8.59,
+        cgpa: "8.59/10",
     },
     schooling: {
         hsc: {
             school: "Rani Laxmi Bai Memorial School - Lucknow",
             stream: "Physics, Chemistry and Mathematics",
-            percentage: 93.2,
+            percentage: "93.2%",
             duration: {
                 from: 2016,
                 to: 2018
@@ -119,7 +121,7 @@ const Education = {
                 from: 2014,
                 to: 2016
             },
-            cgpa: 9.4,
+            cgpa: "9.4/10",
         }
     },
 
@@ -170,7 +172,7 @@ const Projects = {
             about: "A Java based executable program to help users plan their vacation",
             featureList: [
                 "handles functionalities like subscription of a user for an activity",
-                "puts constraints on user subscription through agency passenger capacity, activity capacity",
+                "puts constraints on user subscription through agency passenger and activity capacity",
             ],
             libraries: {
                 l0: {

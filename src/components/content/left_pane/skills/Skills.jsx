@@ -75,7 +75,7 @@ const Skills = () => {
           content={languages.python}
         ></ListContent>
       </ul>
-      <p className="skills-header">Tools</p>
+      <p className="skills-header">Tool</p>
       <ul className="skill-unordered-list">
         <ListContent logo={Assets.gitLogo} content={tools.git}></ListContent>
       </ul>
