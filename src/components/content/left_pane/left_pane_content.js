@@ -13,29 +13,69 @@ const AboutMe = {
 
 const WorkExperiece = {
     ps: {
-        intern: {
-            role: `ASE 
-            (Associate Software Engineer - Flutter Developer)`,
-            at: `PeopleStrong Technologies Pvt. Ltd. - Gurgaon Haryana`,
-            tenure: `Jan-2022
-            to Jun-2022`
-        },
         sde1: {
-            role: `SDE 1 
-            (Software Development Engineer 1 - Flutter Developer)`,
-            at: `PeopleStrong Technologies Pvt. Ltd. - Gurgaon Haryana`,
-            tenure: `Jul-2022
-            to Jul-2023`
-        }
+            at: `PeopleStrong Technologies Pvt. Ltd. | SDE 1 (FULL-TIME)`,
+            tenure: `1.1 Year (July-2022 to July-2023) - Gurgaon Haryana `,
+            role: {
+                backend: {
+                    heading: "Backend | Tech Stack : Java, Springboot",
+                    task0: `• Developed outbound framework and restAPIs to retrieve data from
+                    database according to their specific requirements like pagination
+                    `,
+                    task1: `• Developed a scheduler to schedule posting data to different products or
+                    endpoints in batches at fixed intervals
+                    `
+                },
+
+
+                frontend: {
+                    flutter: {
+                        heading: `Frontend | Tech Stack : Flutter (Mobile & Web)`,
+                        task0: `• Increased transparency of employee attendance, goals by 80%`,
+                        task1: `• Built cards and views to showcase attendance, goals and skill details of an
+                        employee`
+                    },
+
+                    reactJS: {
+                        heading: `Frontend | Tech Stack : ReactJS`,
+                        task0: `• Built views to detail out employee progress report, used pagination(using
+                            ReactPaginate) and efficient infinite scrolling (using IntersectionObserver)
+                            to handle large amount of data`,
+                        task1: `• Built a view to showcase hierarchical relation of an employee with his/her
+                            manager(s), reportee(s) and a view using(ReactTreeView) to showcase goal(s)
+                            assigned to a company/department/individual subjected to financial year and cycle(s)`,
+                    }
+                },
+            },
+        },
+        intern: {
+            at: `PeopleStrong Technologies Pvt. Ltd. | INTERNSHIP`,
+            tenure: `6 months (January-2022 to June-2022) - Gurgaon Haryana `,
+            role: {
+                frontend: {
+                    flutter: {
+                        heading: `Frontend | Tech Stack : Dart, Flutter`,
+                        task0: `• Built an MVP(Minimum Viable Product) of existing web-app`,
+                        task1: `• Developed a feature to showcase attendance punch in timestamp,worked
+                        on change theme, log out and change password features`,
+                        task2: `• Used regex to check password strength`,
+                    },
+
+                },
+            }
+        },
+
     }
 };
 
 
 const Skills = {
     frameworks: {
-
-        flutter: "Flutter",
+        springBoot: "Spring Boot",
         reactJS: "ReactJS",
+        flutter: "Flutter",
+        junit: "JUnit",
+        selenium: "Selenium",
     },
     languages: {
         dart: "Dart",

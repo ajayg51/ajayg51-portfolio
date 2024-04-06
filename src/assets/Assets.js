@@ -7,7 +7,10 @@ import dartLogo from "./images/dart_logo.png";
 import jsLogo from "./images/js_logo.png";
 import cppLogo from "./images/cpp_logo.png";
 import javaLogo from "./images/java_logo.png";
+import springBootLogo from "./images/spring_boot_logo.png";
 import sqlLogo from "./images/sql_logo.png";
+import junitLogo from "./images/junit_logo.png";
+import seleniumLogo from "./images/selenium_logo.png";
 import pythonLogo from "./images/python_logo.png";
 import gitLogo from "./images/git_logo.png";
 import nitpLogo from "./images/nitp_logo.png";
@@ -33,9 +36,12 @@ const Assets = {
     dartLogo: dartLogo,
     jsLogo: jsLogo,
     cppLogo: cppLogo,
+    springBootLogo: springBootLogo,
     javaLogo: javaLogo,
     cppLogo: cppLogo,
     sqlLogo: sqlLogo,
+    junitLogo: junitLogo,
+    seleniumLogo:seleniumLogo,
     pythonLogo: pythonLogo,
     gitLogo: gitLogo,
     javaLogo: javaLogo,

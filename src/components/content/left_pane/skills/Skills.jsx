@@ -6,7 +6,7 @@ const ListContent = ({ logo, content }) => {
   return (
     <li className="skill-list-content">
       <p>
-      <img src={logo} className="logo"></img>
+        <img src={logo} className="logo"></img>
         {/* <span className="logo-container">
           
         </span> */}
@@ -26,12 +26,28 @@ const Skills = () => {
 
       <ul className="skill-unordered-list">
         <ListContent
-          logo={Assets.flutterLogo}
-          content={frameworks.flutter}
+          logo={Assets.springBootLogo}
+          content={frameworks.springBoot}
         ></ListContent>
+
         <ListContent
           logo={Assets.reactLogo}
           content={frameworks.reactJS}
+        ></ListContent>
+
+        <ListContent
+          logo={Assets.flutterLogo}
+          content={frameworks.flutter}
+        ></ListContent>
+
+
+        <ListContent
+          logo={Assets.junitLogo}
+          content={frameworks.junit}
+        ></ListContent>
+        <ListContent
+          logo={Assets.seleniumLogo}
+          content={frameworks.selenium}
         ></ListContent>
       </ul>
 
