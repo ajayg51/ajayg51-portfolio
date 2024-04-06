@@ -30,20 +30,19 @@
     padding: 0;
     margin: 0;
 
-}
-
-.work-experience-heading {
     .company-name {
         margin: 0;
         font-size: 32px;
         font-weight: 700;
+
+        .position {
+            font-family: cursive;
+
+            font-size: 30px;
+            font-weight: 900;
+        }
     }
-    .position{
-        font-family:cursive;
-        
-        font-size: 30px;
-        font-weight: 900;
-    }
+
 
     .tenure {
         margin: 0;
@@ -51,6 +50,7 @@
         font-weight: 700;
     }
 }
+
 
 
 
@@ -67,8 +67,8 @@
         margin-bottom: 10px;
         font-size: 16px;
     }
-    
-    .work-experience-list-style{
+
+    .work-experience-list-style {
         list-style: circle;
     }
 
