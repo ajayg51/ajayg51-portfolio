@@ -19,10 +19,10 @@ const WorkExperiece = {
             role: {
                 backend: {
                     heading: "Backend | Tech Stack : Java, Springboot",
-                    task0: `• Developed outbound framework and restAPIs to retrieve data from
+                    task0: `Developed outbound framework and restAPIs to retrieve data from
                     database according to their specific requirements like pagination
                     `,
-                    task1: `• Developed a scheduler to schedule posting data to different products or
+                    task1: `Developed a scheduler to schedule posting data to different products or
                     endpoints in batches at fixed intervals
                     `
                 },
@@ -31,17 +31,17 @@ const WorkExperiece = {
                 frontend: {
                     flutter: {
                         heading: `Frontend | Tech Stack : Flutter (Mobile & Web)`,
-                        task0: `• Increased transparency of employee attendance, goals by 80%`,
-                        task1: `• Built cards and views to showcase attendance, goals and skill details of an
+                        task0: `Increased transparency of employee attendance, goals by 80%`,
+                        task1: `Built cards and views to showcase attendance, goals and skill details of an
                         employee`
                     },
 
                     reactJS: {
                         heading: `Frontend | Tech Stack : ReactJS`,
-                        task0: `• Built views to detail out employee progress report, used pagination(using
+                        task0: `Built views to detail out employee progress report, used pagination(using
                             ReactPaginate) and efficient infinite scrolling (using IntersectionObserver)
                             to handle large amount of data`,
-                        task1: `• Built a view to showcase hierarchical relation of an employee with his/her
+                        task1: `Built a view to showcase hierarchical relation of an employee with his/her
                             manager(s), reportee(s) and a view using(ReactTreeView) to showcase goal(s)
                             assigned to a company/department/individual subjected to financial year and cycle(s)`,
                     }
@@ -55,10 +55,10 @@ const WorkExperiece = {
                 frontend: {
                     flutter: {
                         heading: `Frontend | Tech Stack : Dart, Flutter`,
-                        task0: `• Built an MVP(Minimum Viable Product) of existing web-app`,
-                        task1: `• Developed a feature to showcase attendance punch in timestamp,worked
+                        task0: `Built an MVP(Minimum Viable Product) of existing web-app`,
+                        task1: `Developed a feature to showcase attendance punch in timestamp,worked
                         on change theme, log out and change password features`,
-                        task2: `• Used regex to check password strength`,
+                        task2: `Used regex to check password strength`,
                     },
 
                 },
