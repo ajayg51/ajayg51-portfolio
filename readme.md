@@ -1,4 +1,4 @@
-#  Portfolio - mobile version to be built (only bigger screen renderable).
+#  Portfolio - mobile version is yet to be built (only bigger screen renderable as of now).
 
 
 # View portfolio
@@ -12,8 +12,5 @@
 
 ## Demo video
 
-
-https://github.com/ajayg51/ajayg51-portfolio/assets/60037249/54fd26d2-8950-49e0-8115-141c6d403e13
-
-
+https://github.com/ajayg51/ajayg51-portfolio/assets/60037249/f5be137a-cbf8-4c08-b0e8-90331772d64f
 
