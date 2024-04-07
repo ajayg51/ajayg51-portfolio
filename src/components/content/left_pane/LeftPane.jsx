@@ -4,10 +4,11 @@ import WorkExperience from "./work_experience/work_experience.jsx";
 import Skills from "./skills/skills.jsx";
 import Education from "./education/education.jsx";
 import Projects from "./projects/projects.jsx";
+import Achievements from "./achievements/achievements.jsx";
+
 import { useEffect } from "react";
 import { useContext } from "react";
 import { HeaderLinkContext } from "../../../utils/context.jsx";
-import Achievements from "./achievements/achievements.jsx";
 
 const GetContent = (index) => {
   switch (index) {

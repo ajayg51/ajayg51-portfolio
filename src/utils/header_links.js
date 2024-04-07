@@ -2,10 +2,10 @@
 const HeaderLinks = [
     "Me",
     "Skills",
+    "Projects",
     "Education",
     "Achievements",
     "Work Experience",
-    "Projects",
 ]
 
 export default HeaderLinks;
