@@ -3,7 +3,7 @@ const FooterContent = {
     mobNoCleanText : "+91 8090485110",
     gmailID : "mailto:ajayg51.nitp@gmail.com",
     gmailIDCleanLink : "ajayg51.nitp@gmail.com",
-    resumeLink : "https://drive.google.com/file/d/1Tewl6kIO3c5UI9OWT51lBTjMr6eQPgWi/view?usp=sharing",
+    resumeLink : "https://drive.google.com/file/d/1-j4O8_a_8CyCj59L9WWwGk4Xl8M2bOLK/view?usp=sharing",
 
 }
 
